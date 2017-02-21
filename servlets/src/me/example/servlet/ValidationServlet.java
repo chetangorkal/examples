@@ -37,7 +37,7 @@ public class ValidationServlet extends HttpServlet {
 			request.getRequestDispatcher("welcome").forward(request, response);
 		} else {
 			response.setContentType("text/html");
-			response.getWriter().println("Unknown user: " + request.getParameter("name"));
+			response.getWriter().println("Unknown user: " + request.getParameter("name") + "<br/>");
 			request.getRequestDispatcher("index.html").include(request, response);
 		}
 	}
