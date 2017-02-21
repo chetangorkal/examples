@@ -12,8 +12,8 @@
 		<servlet-name>MyServlet</servlet-name>
 		<servlet-class>me.example.servlet.HelloServlet</servlet-class>
 		<init-param>
-			<param-name>email</param-name>
-			<param-value>chetankumar.1510@gmail.com</param-value>
+			<param-name>myConfigParam</param-name>
+			<param-value>myConfigParamValue</param-value>
 		</init-param>
 	</servlet>
 	<servlet-mapping>

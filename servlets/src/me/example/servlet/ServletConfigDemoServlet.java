@@ -2,6 +2,7 @@ package me.example.servlet;
 
 import java.io.IOException;
 
+import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebInitParam;
 import javax.servlet.annotation.WebServlet;
@@ -13,10 +14,13 @@ import javax.servlet.http.HttpServletResponse;
  * 
  * @author Chetan Gorkal
  *
- *         Demo of servlet config
+ *         <br/>
+ *         Demo of {@link ServletConfig} using annotations.
  */
 @WebServlet(urlPatterns = {
-		"/update_servlet_config" }, initParams = @WebInitParam(name = "email", value = "chetankumar.1510@gmail.com", description = "Chetan's e-mail ID") )
+		"/update_servlet_config" }, initParams = @WebInitParam(name = "email", value = "chetankumar.1510@gmail.com", description = "Chetan's e-mail ID")
+
+)
 public class ServletConfigDemoServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
