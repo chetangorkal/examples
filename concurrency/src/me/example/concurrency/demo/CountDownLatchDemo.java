@@ -14,6 +14,7 @@ import java.util.logging.Logger;
 public class CountDownLatchDemo {
 
 	public static void main(String args[]) {
+		// 3 threads should perform countdown
 		final CountDownLatch latch = new CountDownLatch(3);
 		Thread cacheService = new Thread(new Service("CacheService", 1000, latch));
 		Thread alertService = new Thread(new Service("AlertService", 5000, latch));

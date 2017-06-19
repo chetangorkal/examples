@@ -12,7 +12,7 @@ import org.apache.catalina.servlet4preview.RequestDispatcher;
 
 /**
  * 
- * @author Chetan Gorkal
+ * @author Chetan Gorkal<br>
  *
  *         Servlet to demo {@link HttpServletResponse#sendRedirect(String)}.
  *         http status code 302.

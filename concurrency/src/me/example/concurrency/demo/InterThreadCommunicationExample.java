@@ -2,14 +2,11 @@ package me.example.concurrency.demo;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.BlockingQueue;
 
 //demo wait and notify
 public class InterThreadCommunicationExample {
 
 	public static void main(String args[]) {
-		BlockingQueue<Integer> bq;/* = new BlockingQueue<E>() {
-		};*/
 		final Queue<Integer> sharedQ = new LinkedList<>();
 
 		Thread producer = new Producer(sharedQ);
@@ -40,6 +37,8 @@ class Producer extends Thread {
 					try {
 						System.out.println("Queue is full, waiting");
 						Thread.sleep(1000);
+						// Thread.yield();
+						// Thread.yield(); static methods releasing lock
 						sharedQ.wait();
 					} catch (InterruptedException ex) {
 						ex.printStackTrace();

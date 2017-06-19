@@ -10,6 +10,7 @@ public class ProducerConsumerPattern {
 	public static void main(String args[]) {
 
 		// Creating shared object
+		// No need to have wait() notify(). Its handled by blockingqueue
 		BlockingQueue<Integer> sharedQueue = new LinkedBlockingQueue<Integer>();
 
 		// Creating Producer and Consumer Thread

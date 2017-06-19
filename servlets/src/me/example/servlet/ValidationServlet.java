@@ -11,9 +11,11 @@ import org.apache.catalina.servlet4preview.RequestDispatcher;
 
 /**
  * 
- * @author Chetan Gorkal Servlet to demonstrate
+ * @author Chetan Gorkal Servlet to demonstrate<br>
+ *         <br>
  *         {@link RequestDispatcher#forward(javax.servlet.ServletRequest, javax.servlet.ServletResponse)}
- *         and
+ *         and<br>
+ *         <br>
  *         {@link RequestDispatcher#include(javax.servlet.ServletRequest, javax.servlet.ServletResponse)}
  */
 @WebServlet("/validate")
